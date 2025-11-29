@@ -1,0 +1,108 @@
+<!-- ========================= records.html ========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City Library - Records</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <h1 class="logo">City Library</h1>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="register.html" class="nav-link">Register</a>
+        <a href="records.html" class="nav-link active">Records</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Library Records</h2>
+    <p>Below are examples of two styled tables: current available books and recent bookings.</p>
+
+    <section class="table-wrap">
+      <h3>Available Books</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Copies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Thinking, Fast and Slow</td>
+            <td>Daniel Kahneman</td>
+            <td>Psychology</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>Self-help</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Fiction</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-wrap">
+      <h3>Recent Bookings</h3>
+      <table class="table striped">
+        <thead>
+          <tr>
+            <th>Booking ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BK-1001</td>
+            <td>Asha Patel</td>
+            <td>Room</td>
+            <td>2025-11-25</td>
+            <td><span class="status confirmed">Confirmed</span></td>
+          </tr>
+          <tr>
+            <td>BK-1002</td>
+            <td>Rohit Sen</td>
+            <td>Book</td>
+            <td>2025-11-26</td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year3"></span> City Library</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
